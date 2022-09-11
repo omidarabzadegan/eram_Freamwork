@@ -1,3 +1,6 @@
 <?php
 include "bootstrap/init.php";
-var_dump($_ENV);
+echo assets_url('');
+?>
+
+<link rel="stylesheet" href="<?= assets_url('css/style.css') ?>">
