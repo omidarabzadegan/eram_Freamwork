@@ -1,6 +1,9 @@
 <?php
 
+use App\core\Requests;
 
 include "bootstrap/init.php";
 
-echo App\utilities\Url::current_url();
+$request =  new Requests();
+dd($request->input('name'));
+
