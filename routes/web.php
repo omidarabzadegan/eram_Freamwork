@@ -2,18 +2,17 @@
 
 use App\core\routing\Route;
 
-Route::add(['get'] , '/null');
+Route::get("/eram_framework/null");
 
-Route::add(['get'] , '/' , function(){
+Route::add(['get','post'] , '/eram_framework/a' , function(){
     echo 'welcome';
 });
 
-Route::post( '/saveForm' , function(){
+Route::post( '/eram_framework/b' , function(){
     echo "save Ok";
 });
 
-Route::put( '/puturi' ,['controller' , 'method']);
+Route::put( '/eram_framework/c' ,['controller' , 'method']);
 
-Route::get('/' , 'controller@method');
+Route::get('/eram_framework/d' , 'controller@method');
 
-dd(Route::routes());
